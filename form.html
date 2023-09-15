@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Form Design</title>
+    <style>
+      .myform {
+        width: 520px;
+        height: 445px;
+        /*220->left,right and auto->bottom,down*/
+        margin: 220px auto;
+        /*background-image:linear-gradient(direction,color-step1,color-stop1,color-step2,.....)*/
+        background: -webkit-linear-gradient(top, #3b3b3b, #373737);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .myform > .cacc {
+        height: 77px;
+        text-align: center;
+        line-height: 77px;
+        font-size: 2em;
+        color: white;
+        border-bottom: 1px solid #1b1b1b;
+        text-shadow: 0px -2px 1px rgb(0, 0, 0, 0.5);
+      }
+      .myform > div > input {
+        display: block;
+        width: 92%;
+        height: 38px;
+        border-radius: 32px;
+        margin: 7px auto;
+        background-image: -webkit-linear-gradient(top, #b1b1b1, #d7d7d7);
+        border-radius: none;
+        /*box-shadow====->saxis y->yaxis, b->border, s->shadow, c->color*/
+        box-shadow: 0px 1px 1px 1px #5b595a;
+        margin-bottom: 200px auto;
+      }
+      .tnc {
+        font-size: 1em !important;
+        text-align: center !important;
+        color: #fff;
+      }
+      .box {
+        padding: 5px 8px;
+      }
+      .box > input:hover {
+        border: none !important;
+      }
+      .tnc a {
+        color: green;
+      }
+      .button {
+        display: block;
+        width: 220px;
+        height: 46px;
+        float: right;
+        border-radius: 220px;
+        font-size: 1.5em;
+        border: none;
+        margin-right: 10px;
+        background-image: -webkit-linear-gradient(top, #909419, #c6e576);
+        text-shadow: 0px -2px 1px rgb(0, 0, 0, 0.5);
+      }
+      .box input:first-child {
+        /*background-position x->axis y->yaxis*/
+        background-position: 10px center;
+        background-repeat: no-repeat;
+        background-image: url("1.png"),
+          -webkit-linear-gradient(top, #909081, #e5edd0);
+      }
+      .box input:nth-child(2) {
+        background-position: 10px center;
+        background-repeat: no-repeat, repeat;
+        background-image: url("2.png"),
+          -webkit-linear-gradient(top, #909081, #e5edd0);
+      }
+      .box input:nth-child(3) {
+        background-position: 10px center;
+        background-repeat: no-repeat, repeat;
+        background-image: url("3.png"),
+          -webkit-linear-gradient(top, #909081, #e5edd0);
+      }
+
+      .box input:nth-child(4) {
+        background-position: 10px center;
+        background-repeat: no-repeat, repeat;
+        background-image: url("4.png"),
+          -webkit-linear-gradient(top, #909081, #e5edd0);
+      }
+    </style>
+  </head>
+  <body>
+    <form class="myform">
+      <div class="cacc">Create an Account</div>
+      <div class="box">
+        <input type="text" name="fname" value="" placeholder="Name" />
+        <input
+          type="phone"
+          name="pnumber"
+          value=""
+          placeholder="Phone Number"
+        />
+        <input type="email" name="email" value="" placeholder="Email" />
+        <input
+          type="password"
+          name="password"
+          value=""
+          placeholder="Password"
+        />
+        <p class="tnc">
+          <input type="checkbox" name="tnc" value="i agree to the check" />I
+          agree to the <a href="#">Terms and Condition</a>and
+          <a href="#">Privacy Police</a>
+        </p>
+      </div>
+      <div class="button">
+        <input type="submit" name="" value="Create Account" />
+      </div>
+    </form>
+  </body>
+</html>
